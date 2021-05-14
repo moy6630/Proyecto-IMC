@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{default}">
+    <head>
+    
+        <link rel="stylesheet" href="/css/style.css" />
+     <meta charset="utf-8">
+    
+        <title>Signup</title>
+    </head>
+    <body class="text-center">
+    
+        <div layout:fragment="content">
+        
+            <form class="form-signin" th:action="@{/signup}" method="post">
+            
+               
+               
+                <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
+                <img class="mb-4" src="https://image.flaticon.com/icons/png/512/753/753210.png" alt="" width="72" height="72">
+                <div th:if="${param.error}">
+                    Email y Contraseña invalido.
+                </div>
+                <div th:if="${param.logout}">
+                    Cerraste sesion.
+                </div>
+                <p></p>
+                            <label for="inputUsername" class="sr-only">Username</label><br><p></p>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Username" required="" /><br><p></p><p></p><p></p>
+                <label for="inputPassword" class="sr-only">Password</label><br><p></p>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="" /><br><p></p><p></p><p></p>
+                <label for="inputFullname" class="sr-only">Full Name</label><br><p></p>
+                <input type="text" name="fullname" id="inputEmail" class="form-control" placeholder="Fullname" required="" /><br><p></p><p></p><p></p>
+                 <label for="inputSex" class="sr-only">Sex</label><br><p></p>
+                <input type="radio" name="Sex" id="inputsex" class="form-control" placeholder="Sex"  value="male"/>
+                <label for="male">Male</label>
+                 <input type="radio" name="Sex" id="inputsex" class="form-control" placeholder="Sex" value="female" />
+                 <label for="female">Female</label><br><p></p><p></p>
+                <label for="inputAge" class="sr-only" >Age</label><br><p></p>
+                <input type="text" name="Age" id="inputAge" class="form-control" placeholder="Age" required="" min="15"/><br><p></p><p></p><p></p>
+          
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button><p></p>
+            </form>
+            <form class="form-signin" th:action="@{/login}" method="get">
+                <button class="btn btn-md btn-success btn-block" type="Submit">Regresar al incio</button>
+            </form>
+            
+        </div>
+        
+    </body>
+</html>

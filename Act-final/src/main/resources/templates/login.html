@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{default}">
+    <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Login</title>
+    </head>
+    <body class="text-center">
+        <div layout:fragment="content" align="center">
+            <form class="form-signin" th:action="@{/login}" method="post">
+                <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
+                <h1 class="h3 mb-3 font-weight-normal">Inicio de sesion</h1>
+                <div th:if="${param.error}" align="center">
+                    Correo electrónico y/o contraseña inválidos.
+                </div>
+                <div th:if="${param.logout}" align="center">
+                    Se ha cerrado la sesión.
+                </div>
+                
+                <label for="inputEmail" class="sr-only">Email </label><p></p>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required="" /><p></p><p></p><p></p>
+                <label for="inputPassword" class="sr-only">Password</label><p></p>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="" /><p></p><p></p><p></p>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesion</button><p></p>
+            </form>
+            <form class="form-signin" th:action="@{/signup}" method="get">
+                <button class="btn btn-md btn-success btn-block" type="Submit">Registrate</button>
+            </form>
+        </div>
+        
+    </body>
+</html>

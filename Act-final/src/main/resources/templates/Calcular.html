@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <link rel="stylesheet" href="/css/style.css" />
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+<h1> Resultado</h1><p></p>
+<b>Nombre de usuario: </b>[[${nombModel}]]<b></b><p></p>
+<b>Peso: </b>[[${pesoModel}]]<b></b><p></p>
+<b>Estatura: </b>[[${estModel}]]<b></b><p></p>
+<b>IMC Actual: </b>[[${sumaModel}]]<b></b><p></p>
+<input type="image" src="https://www.reproduccionasistida.org/wp-content//efecto-del-imc-en-reproduccion.jpg" height=350 width=575><p></p>
+<form class="form-signin" th:action="@{/login}" method="get">
+                <button class="btn btn-md btn-success btn-block" type="Submit">Regresar al incio</button>
+            </form>
+</div>
+</body>
+</html>
