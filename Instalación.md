@@ -1,10 +1,6 @@
-# Proyecto-IMC
-Proyecto que calcula el IMC de las personas
-## Descripción
-Este es un proyecto que registra usuarios en una base de datos, los consulta y calcula su índice de masa corporal, indicando si el usuario se encuentra en buen estado
-## Problema identificado
-El porblema identificado va orientado a las personas que quieran conocer su nivel en el que se encuentran en cuanto a su índice de masa corporal, lo cual es lo que hace el sistema
-## Solución
-La solución, correspondería este programa, ya que, al final, proporciona un resultado sobre el estado de salud del usuario
-## Arquitectura
-![image](https://user-images.githubusercontent.com/54690234/119583548-76bb7580-bd8c-11eb-8b60-e4a5cc1dadb9.png)
+# ¿Cómo instalar el ambiente de desarrollo?
+A través de los sitios oficiales de "Eclipse" así como de "MongoDB" y "SpringTools"
+## ¿Cómo ejecutar pruebas manualmente?
+Se realizan al ejecutar el proyecto e ingresar al puerto asignado del proyecto mediante una página web
+## ¿Cómo implementar la solución en producción en un ambiente local o en la nube como Heroku?
+Se implementaría la colución en un ambiente local ejecutando el proyecto, de esta forma, la computadora le otorgo un puerto en específico para que el sistema pueda ser utilizado
