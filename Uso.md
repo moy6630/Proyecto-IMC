@@ -1,10 +1,14 @@
-# Proyecto-IMC
-Proyecto que calcula el IMC de las personas
-## Descripción
-Este es un proyecto que registra usuarios en una base de datos, los consulta y calcula su índice de masa corporal, indicando si el usuario se encuentra en buen estado
-## Problema identificado
-El porblema identificado va orientado a las personas que quieran conocer su nivel en el que se encuentran en cuanto a su índice de masa corporal, lo cual es lo que hace el sistema
-## Solución
-La solución, correspondería este programa, ya que, al final, proporciona un resultado sobre el estado de salud del usuario
-## Arquitectura
-![image](https://user-images.githubusercontent.com/54690234/119583548-76bb7580-bd8c-11eb-8b60-e4a5cc1dadb9.png)
+# Sección de referencia para usuario final
+Para los usuarios finales, el programa cuenta con estas distintas pantallas:
+
+-Pantalla de inicio
+
+-Registro
+
+-Pantalla de inicio de sesión
+
+-Pantalla de resultados.
+
+El programa es intuitivo y una pantalla no puede cambiar si no se cumple con tener un registro en la base de datos
+## Sección de referencia para usuario administrador.
+Los archivos se encuentran divididos a través del modelo MVC como lo muestra la arquitectura del proyecto, dentro de estos paquetes, se encuentran las clases para su correcta gestión de ellas
